@@ -23,20 +23,4 @@ axios.get("https://extreme-ip-lookup.com/json/")
 
 <!-- Sample Output -->
 
-{
-"businessName": "",
-"businessWebsite": "",
-"city": "Bensalem",
-"continent": "North America",
-"country": "United States",
-"countryCode": "US",
-"ipName": "c-68-81-127-254.hsd1.pa.comcast.net",
-"ipType": "Residential",
-"isp": "Comcast Cable Communications, LLC",
-"lat": "40.10455",
-"lon": "-74.95128",
-"org": "Comcast Cable Communications, LLC",
-"query": "68.81.127.254",
-"region": "Pennsylvania",
-"status": "success"
-}
+![Local City]('./images/current-city.png')
