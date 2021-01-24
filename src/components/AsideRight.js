@@ -35,16 +35,16 @@ function AsideRight() {
       .catch((error) => console.error(error));
   }, []);
 
-  const convertKtoC = (temp) => {
+  const convertKtoF = (temp) => {
     return Math.floor(((temp - 273.15) * 9) / 5 + 32);
   };
 
   const minMaxTemp = (min, max) => {
     return (
       <h3>
-        <span className="py-4">{min}&deg;</span>
+        <span className="py-4">{convertKtoF(min)}&deg;</span>
         {" - "}
-        <span className="py-4">{max}&deg;</span>
+        <span className="py-4">{convertKtoF(max)}&deg;</span>
       </h3>
     );
   };
@@ -62,10 +62,10 @@ function AsideRight() {
         <span>{currLocData.country}</span>
       </div>
       <i className={customCl}></i>
-      <h1 className="py-2">{convertKtoC(currLocWeatherCond.main.temp)}&deg;</h1>
+      <h1 className="py-2">{convertKtoF(currLocWeatherCond.main.temp)}&deg;</h1>
       {minMaxTemp(
-        convertKtoC(currLocWeatherCond.main.temp_min),
-        convertKtoC(currLocWeatherCond.main.temp_max)
+        currLocWeatherCond.main.temp_min,
+        currLocWeatherCond.main.temp_max
       )}
       <h4 className="py-3">{currLocWeatherCond.weather[0].description}</h4>
       <LocalTime />

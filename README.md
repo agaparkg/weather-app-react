@@ -1,6 +1,6 @@
-## Weather React App
+## Weather App React
 
-This project is deployed to Heroku [Open Weather App](https://github.com/facebook/create-react-app).
+This project is deployed to Heroku [Click here open Weather App](https://github.com/facebook/create-react-app).
 
 ### The Celsius to Kelvin Conversion Formula
 
