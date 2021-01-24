@@ -23,4 +23,4 @@ axios.get("https://extreme-ip-lookup.com/json/")
 
 <!-- Sample Output -->
 
-![Local City]('src/images/current-city.png')
+![Local City]('./current-city.png')
