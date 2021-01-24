@@ -2,13 +2,13 @@
 
 This project is deployed to Heroku [Open Weather App](https://github.com/facebook/create-react-app).
 
-## The Celsius to Kelvin Conversion Formula
+### The Celsius to Kelvin Conversion Formula
 
 How to convert 269.05 Celsius to kelvin? You can use the following formula to convert from Celsius to Fahrenheit :
 
 Y(K) = X(℃) + 273.15
 
-### For example: To convert 269.05 Celsius to Kelvin: ?
+### For example: To convert 269.05 Celsius to Kelvin:
 
 Y(K) = 269.05(℃) + 273.15
 
