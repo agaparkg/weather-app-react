@@ -1,6 +1,22 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class App extends Component {
+  state = {
+    data: [],
+  };
+
+  componentDidMount() {
+    axios
+      .request(options)
+      .then(function (response) {
+        console.log({ resp: response.list });
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  }
+
   render() {
     return (
       <div className="App">
