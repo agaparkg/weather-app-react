@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header>
+          <img src={require("./images/weather.png")} alt="" />
+          <h1>React Weather App</h1>
+        </header>
+        <main>
+          <aside id="left-side">
+            <h3 className="aside-h3">Find Current Weather Conditions</h3>
+            <input id="search" type="text" placeholder="Enter city..." />
+            <form>
+              <input
+                type="radio"
+                id="fahrenheit"
+                name="degree"
+                value="fahrenheit"
+              />
+              <label htmlFor="fahrenheit">Fahrenheit</label>{" "}
+              <input type="radio" id="celcius" name="degree" value="celcius" />
+              <label htmlFor="celcius">Celcius</label>
+              <br />
+              <input id="submit" type="submit" value="Submit" />
+            </form>
+          </aside>
+          <aside id="right-side">
+            <h3 className="aside-h3">Local Weather</h3>
+          </aside>
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;
