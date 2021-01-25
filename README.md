@@ -1,8 +1,6 @@
 ## Weather App React
 
-This project is deployed to Heroku [Click here open Weather App](https://github.com/facebook/create-react-app).
-
-### The Celsius to Kelvin Conversion Formula
+This project is deployed to Surge.sh [Click here to open Weather App](http://smelly-growth.surge.sh/).
 
 ### How to convert Kelvin to Fahrenheit?
 
