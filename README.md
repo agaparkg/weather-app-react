@@ -13,6 +13,6 @@ K = (F - 273.15)\*9/5 + 32
 axios.get("https://extreme-ip-lookup.com/json/")
 .then(data => console.log(data))
 
-<!-- Sample Output -->
+Sample Output
 
 ![Local City](./src/images/current-city.png)
