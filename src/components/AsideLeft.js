@@ -51,6 +51,9 @@ function AsideLeft() {
       </form>
       <section className="search-result">
         <i className="wi wi-owm-804 display-1"></i>
+        <div>
+          <span></span>
+        </div>
       </section>
     </aside>
   );
