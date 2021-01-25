@@ -41,11 +41,11 @@ function AsideRight() {
 
   const minMaxTemp = (min, max) => {
     return (
-      <h3>
-        <span className="py-4">{convertKtoF(min)}&deg;</span>
+      <h5>
+        <span className="py-4">Low: {convertKtoF(min)}&deg;</span>
         {" - "}
-        <span className="py-4">{convertKtoF(max)}&deg;</span>
-      </h3>
+        <span className="py-4">High: {convertKtoF(max)}&deg;</span>
+      </h5>
     );
   };
 
