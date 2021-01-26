@@ -4,11 +4,11 @@ This project is deployed to Surge.sh [Click here to open Weather App](http://sme
 
 ### Kelvin to Fahrenheit
 
-K = (F - 273.15)\*9/5 + 32
+F = (K - 273.15)\*9/5 + 32
 
 ### Kelvin to Celsius
 
-K = C + 273.15
+C = K - 273.15
 
 ### To check the current location (city) of the user
 
