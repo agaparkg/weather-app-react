@@ -10,6 +10,10 @@ F = (K - 273.15)\*9/5 + 32
 
 C = K - 273.15
 
+### Retrieve data from weather api specific to each city
+
+http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME}&appid={YOUR_API_KEY}
+
 ### To check the current location (city) of the user
 
 axios.get("https://extreme-ip-lookup.com/json/")
