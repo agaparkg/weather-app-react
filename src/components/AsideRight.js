@@ -41,33 +41,32 @@ function AsideRight() {
 
   const minMaxTemp = (min, max) => {
     return (
-      <h5>
-        <span className="py-4">Low: {convertKtoF(min)}&deg;</span>
+      <h6>
+        <span>Low: {convertKtoF(min)}&deg;</span>
         {" - "}
-        <span className="py-4">High: {convertKtoF(max)}&deg;</span>
-      </h5>
+        <span>High: {convertKtoF(max)}&deg;</span>
+      </h6>
     );
   };
 
-  const customCl = `wi wi-owm-${currLocWeatherCond.weather[0].id} display-1`;
-
+  const { temp_min, temp_max, temp } = currLocWeatherCond.main;
+  const { city, state, country } = currLocData;
+  const { description, id } = currLocWeatherCond.weather[0];
+  const customCl = `wi wi-owm-${id} display-1`;
   return (
     <aside id="right-side">
       <h3 className="aside-h3">Local Weather</h3>
       <div className="current-location">
-        <span>{currLocData.city}</span>
+        <span>{city}</span>
         <br />
-        <span>{currLocData.state}</span>
+        <span>{state}</span>
         {", "}
-        <span>{currLocData.country}</span>
+        <span>{country}</span>
       </div>
       <i className={customCl}></i>
-      <h1 className="py-2">{convertKtoF(currLocWeatherCond.main.temp)}&deg;</h1>
-      {minMaxTemp(
-        currLocWeatherCond.main.temp_min,
-        currLocWeatherCond.main.temp_max
-      )}
-      <h4 className="py-3">{currLocWeatherCond.weather[0].description}</h4>
+      <h1>{convertKtoF(temp)}&deg;</h1>
+      {minMaxTemp(temp_min, temp_max)}
+      <h4>{description}</h4>
       <LocalTime />
     </aside>
   );
