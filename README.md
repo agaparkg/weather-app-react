@@ -1,5 +1,8 @@
 ## Weather App React
 
+![Initial Display](./src/images/ui.png)
+![Output in UI](./src/images/ui-result.png)
+
 This project is deployed to Surge.sh [Click here to open Weather App](http://smelly-growth.surge.sh/).
 
 ### Kelvin to Fahrenheit
