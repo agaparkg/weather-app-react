@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import weatherLogo from '../images/weather.png';
 
 function Header() {
   return (
     <header>
-      <img src={require("../images/weather.png").default} alt="weather logo" />
+      <img src={weatherLogo} alt='weather logo' />
       <h1>React Weather App</h1>
     </header>
   );
