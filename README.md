@@ -17,9 +17,9 @@ C = K - 273.15
 
 http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME}&appid={YOUR_API_KEY}
 
-### To check the current location (city) of the user
+### To check the current location (city) of the user (don't forgot to put your own API_KEY at the end)
 
-axios.get("https://extreme-ip-lookup.com/json/")
+axios.get("https://extreme-ip-lookup.com/json/?key={API_KEY}")
 .then(data => console.log(data))
 
 Sample Output
