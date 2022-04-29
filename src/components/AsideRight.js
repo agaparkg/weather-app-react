@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import LocalTime from './LocalTime';
+import LocalTime from './LocalTimeClass';
 import axios from 'axios';
 
 function AsideRight() {
