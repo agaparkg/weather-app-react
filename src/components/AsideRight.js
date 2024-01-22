@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import LocalTime from './LocalTimeClass';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import LocalTime from "./LocalTimeClass";
+import axios from "axios";
 
 function AsideRight() {
   const [currLocData, setCurrLocData] = useState({
-    city: '',
-    state: '',
-    country: '',
+    city: "",
+    state: "",
+    country: "",
   });
 
   const [currLocWeatherCond, setCurrLocWeatherCond] = useState({
-    weather: [{ id: '', description: '' }],
-    main: { temp: '', temp_min: '', temp_max: '' },
+    weather: [{ id: "", description: "" }],
+    main: { temp: "", temp_min: "", temp_max: "" },
   });
 
   useEffect(() => {
     const currLocationAPI =
-      'https://extreme-ip-lookup.com/json/?key=f7Zqeoj2J8Z7gO4DtcYg';
+      "https://extreme-ip-lookup.com/json/?key=f7Zqeoj2J8Z7gO4DtcYg";
     axios
       .get(currLocationAPI)
       .then(async (currLocationRes) => {
@@ -44,7 +44,7 @@ function AsideRight() {
     return (
       <h6>
         <span>Low: {convertKtoF(min)}&deg;</span>
-        {' - '}
+        {" - "}
         <span>High: {convertKtoF(max)}&deg;</span>
       </h6>
     );
@@ -55,13 +55,13 @@ function AsideRight() {
   const { description, id } = currLocWeatherCond.weather[0];
   const customCl = `wi wi-owm-${id} display-1`;
   return (
-    <aside id='right-side'>
-      <h3 className='aside-h3'>Local Weather</h3>
-      <div className='current-location'>
+    <aside id="right-side">
+      <h3 className="aside-h3">Local Weather</h3>
+      <div className="current-location">
         <span>{city}</span>
         <br />
         <span>{state}</span>
-        {', '}
+        {", "}
         <span>{country}</span>
       </div>
       <i className={customCl}></i>
